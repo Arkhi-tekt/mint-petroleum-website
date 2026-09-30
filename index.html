@@ -96,6 +96,7 @@
   /* Section divider styling */
   section {
     position: relative;
+    scroll-margin-top: 60px;
   }
 </style>
 </head>
@@ -256,7 +257,7 @@
             <h1 class="mp-hero__title">MINT PETROLEUM LTD</h1>
             <h2 class="mp-hero__subtitle">COMPANY PROFILE</h2>
             <p class="mp-hero__tagline">Powering Progress Consistently</p>
-            <button class="mp-hero__btn">Learn More</button>
+            <a href="#toc" class="mp-hero__btn" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">Learn More</a>
             <div class="mp-hero__deco-dots"></div>
         </div>
         <div class="mp-hero__image-wrapper">
@@ -331,6 +332,18 @@
             display: flex;
             justify-content: space-between;
             align-items: baseline;
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .mp-toc__item:hover {
+            transform: translateX(6px);
+            box-shadow: 0 6px 16px rgba(27,58,45,0.12);
+            border-left-color: #C8962E;
+        }
+        .mp-toc__item:hover .mp-toc__item-title {
+            color: #C8962E;
         }
         .mp-toc__item-title {
             font-weight: 600;
@@ -341,6 +354,7 @@
             position: relative;
             background: #FFF;
             z-index: 2;
+            transition: color 0.2s ease;
         }
         .mp-toc__item-page {
             font-weight: 700;
@@ -375,69 +389,69 @@
 
         <div class="mp-toc__grid">
             <div class="mp-toc__column">
-                <div class="mp-toc__item">
+                <a href="#md-message" class="mp-toc__item">
                     <span class="mp-toc__item-title">Message from the Managing Director</span>
                     <div class="mp-toc__item-dotted"></div>
                     <span class="mp-toc__item-page">PG 03</span>
-                </div>
-                <div class="mp-toc__item">
+                </a>
+                <a href="#who-we-are" class="mp-toc__item">
                     <span class="mp-toc__item-title">Who We Are</span>
                     <div class="mp-toc__item-dotted"></div>
                     <span class="mp-toc__item-page">PG 04</span>
-                </div>
-                <div class="mp-toc__item">
+                </a>
+                <a href="#strategic-direction" class="mp-toc__item">
                     <span class="mp-toc__item-title">Our Strategic Direction</span>
                     <div class="mp-toc__item-dotted"></div>
                     <span class="mp-toc__item-page">PG 05</span>
-                </div>
-                <div class="mp-toc__item">
+                </a>
+                <a href="#core-values" class="mp-toc__item">
                     <span class="mp-toc__item-title">The Mint Way</span>
                     <div class="mp-toc__item-dotted"></div>
                     <span class="mp-toc__item-page">PG 07</span>
-                </div>
-                <div class="mp-toc__item">
+                </a>
+                <a href="#energy-solutions" class="mp-toc__item">
                     <span class="mp-toc__item-title">Our Energy Solutions</span>
                     <div class="mp-toc__item-dotted"></div>
                     <span class="mp-toc__item-page">PG 08</span>
-                </div>
+                </a>
             </div>
 
             <div class="mp-toc__column">
-                <div class="mp-toc__item">
+                <a href="#energy-services" class="mp-toc__item">
                     <span class="mp-toc__item-title">Integrated Energy Services</span>
                     <div class="mp-toc__item-dotted"></div>
                     <span class="mp-toc__item-page">PG 10</span>
-                </div>
-                <div class="mp-toc__item">
+                </a>
+                <a href="#industries" class="mp-toc__item">
                     <span class="mp-toc__item-title">Industries We Serve</span>
                     <div class="mp-toc__item-dotted"></div>
                     <span class="mp-toc__item-page">PG 11</span>
-                </div>
-                <div class="mp-toc__item">
+                </a>
+                <a href="#hsse" class="mp-toc__item">
                     <span class="mp-toc__item-title">Health, Safety, Security & Environment</span>
                     <div class="mp-toc__item-dotted"></div>
                     <span class="mp-toc__item-page">PG 13</span>
-                </div>
-                <div class="mp-toc__item">
+                </a>
+                <a href="#partnerships" class="mp-toc__item">
                     <span class="mp-toc__item-title">Our Commitment to Sustainable Partnerships</span>
                     <div class="mp-toc__item-dotted"></div>
                     <span class="mp-toc__item-page">PG 14</span>
-                </div>
-                <div class="mp-toc__item">
+                </a>
+                <a href="#why-choose" class="mp-toc__item">
                     <span class="mp-toc__item-title">Why Choose Mint Petroleum Ltd</span>
                     <div class="mp-toc__item-dotted"></div>
                     <span class="mp-toc__item-page">PG 15</span>
-                </div>
-                <div class="mp-toc__item">
+                </a>
+                <a href="#statutory" class="mp-toc__item">
                     <span class="mp-toc__item-title">Company Information & Statutory Documents</span>
                     <div class="mp-toc__item-dotted"></div>
                     <span class="mp-toc__item-page">PG 16</span>
-                </div>
-                <div class="mp-toc__item">
+                </a>
+                <a href="#contact" class="mp-toc__item">
                     <span class="mp-toc__item-title">Let's Power Your Success</span>
                     <div class="mp-toc__item-dotted"></div>
                     <span class="mp-toc__item-page">PG 18</span>
-                </div>
+                </a>
             </div>
         </div>
     </div>
